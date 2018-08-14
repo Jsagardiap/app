@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sitio Oficial de Prueba</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <h1><center>{% block heading %}{% endblock %}</center></h1>
+
+       {% block body %}
+       {% endblock %}
+  </body>
+</html>
